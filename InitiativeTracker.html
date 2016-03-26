@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Initiative Tracker</title>
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="InitTrackerScript.js"></script>
+    <link rel="stylesheet" href="InitTrackerStyle.css">
+    </script>
+</head>
+<body>
+    <div id="Encapsulation">
+        <div id="GridBox">
+            <table>
+                <tr>
+                  <th colspan="2">Participant</th>
+                  <th>Mod</th>
+                  <th>Result</th>
+                </tr>
+                <tr>
+                  <td><button class='ActivateButton' id='ActivateButton1' type = "button">&</button></td>
+                  <td><input type = "text" class="ConField" id = "ConField1" disabled></td>
+                  <td><input type="number" class="RangeField" id = "numField1" value="0" disabled></td>
+                  <td><input type="number" class="Score" id = "Score1" value="0" disabled readonly></td>
+                  <td><div class='Marker' id='Marker1'></div></td>
+                </tr>
+                <tr>
+                  <td><button class='ActivateButton' id='ActivateButton2' type = "button">&</button></td>
+                  <td><input type = "text" class="ConField" id = "ConField2" disabled></td>
+                  <td><input type="number" class="RangeField" id = "numField2" value="0" disabled></td>
+                  <td><input type="number" class="Score" id = "Score2" value="0" disabled readonly></td>
+                  <td><div class='Marker' id='Marker2'></div></td>
+                </tr>
+                <tr>
+                  <td><button class='ActivateButton' id='ActivateButton3' type = "button">&</button></td>
+                  <td><input type = "text" class="ConField" id = "ConField3" disabled></td>
+                  <td><input type="number" class="RangeField" id = "numField3" value="0" disabled></td>
+                  <td><input type="number" class="Score" id = "Score3" value="0" disabled readonly></td>
+                  <td><div class='Marker' id='Marker3'></div></td>
+                </tr>
+                <tr>
+                  <td><button class='ActivateButton' id='ActivateButton4' type = "button">&</button></td>
+                  <td><input type = "text" class="ConField" id = "ConField4" disabled></td>
+                  <td><input type="number" class="RangeField" id = "numField4" value="0" disabled></td>
+                  <td><input type="number" class="Score" id = "Score4" value="0" disabled readonly></td>
+                  <td><div class='Marker' id='Marker4'></div></td>
+                </tr>
+                <tr>
+                  <td><button class='ActivateButton' id='ActivateButton5' type = "button">&</button></td>
+                  <td><input type = "text" class="ConField" id = "ConField5" disabled></td>
+                  <td><input type="number" class="RangeField" id = "numField5" value="0" disabled></td>
+                  <td><input type="number" class="Score" id = "Score5" value="0" disabled readonly></td>
+                  <td><div class='Marker' id='Marker5'></div></td>
+                </tr>
+                <tr>
+                  <td><button class='ActivateButton' id='ActivateButton6' type = "button">&</button></td>
+                  <td><input type = "text" class="ConField" id = "ConField6" disabled></td>
+                  <td><input type="number" class="RangeField" id = "numField6" value="0" disabled></td>
+                  <td><input type="number" class="Score" id = "Score6" value="0" disabled readonly></td>
+                  <td><div class='Marker' id='Marker6'></div></td>
+                </tr>
+                <tr>
+                  <td><button class='ActivateButton' id='ActivateButton7' type = "button">&</button></td>
+                  <td><input type = "text" class="ConField" id = "ConField7" disabled></td>
+                  <td><input type="number" class="RangeField" id = "numField7" value="0" disabled></td>
+                  <td><input type="number" class="Score" id = "Score7" value="0" disabled readonly></td>
+                  <td><div class='Marker' id='Marker7'></div></td>
+                </tr>
+                <tr>
+                  <td><button class='ActivateButton' id='ActivateButton8' type = "button">&</button></td>
+                  <td><input type = "text" class="ConField" id = "ConField8" disabled></td>
+                  <td><input type="number" class="RangeField" id = "numField8" value="0" disabled></td>
+                  <td><input type="number" class="Score" id = "Score8" value="0" disabled readonly></td>
+                  <td><div class='Marker' id='Marker8'></div></td>
+                </tr>
+                <tr>
+                  <td><button class='ActivateButton' id='ActivateButton9' type = "button">&</button></td>
+                  <td><input type = "text" class="ConField" id = "ConField9" disabled></td>
+                  <td><input type="number" class="RangeField" id = "numField9" value="0" disabled></td>
+                  <td><input type="number" class="Score" id = "Score9" value="0" disabled readonly></td>
+                  <td><div class='Marker' id='Marker9'></div></td>
+                </tr>
+                <tr>
+                  <td><button class='ActivateButton' id='ActivateButton10' type = "button">&</button></td>
+                  <td><input type = "text" class="ConField" id = "ConField10" disabled></td>
+                  <td><input type="number" class="RangeField" id = "numField10" value="0" disabled></td>
+                  <td><input type="number" class="Score" id = "Score10" value="0" disabled readonly></td>
+                  <td><div class='Marker' id='Marker10'></div></td>
+                </tr>
+            </table>
+        </div><!--Gridbox End -->
+        <div id="ButtonBox">
+            <button id='Initiate' type = "button">Roll Initiative</button>
+            <button id='ClearResults' type = "button">CLR</button>
+            <p id="CurrentlyActiveBox">Currently Active: <span id='CA' style='color: Green'></span></p>            
+            <button id='Next' type = "button">Next Combatant</button>            
+        </div>
+    </div><!--Encapsulation End -->
+</body>
+</html>
