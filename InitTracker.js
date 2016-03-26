@@ -348,6 +348,20 @@ function Next() {
             CurrentInitiativeHolder =  8;
             break;
         }
+       if (Combatant9 && Score9 === i && CurrentInitiativeHolder != 9 && Combatant9Ready) {
+            $('#Marker9').css('background-color','green');
+            $('#CA').text($('#ConField9').val());
+            Combatant9Ready = false;
+            CurrentInitiativeHolder =  9;
+            break;
+        }
+       if (Combatant10 && Score10 === i && CurrentInitiativeHolder != 10 && Combatant10Ready) {
+            $('#Marker10').css('background-color','green');
+            $('#CA').text($('#ConField10').val());
+            Combatant10Ready = false;
+            CurrentInitiativeHolder =  10;
+            break;
+        }
         if (i === Min - 1) {
             Combatant1Ready = true;Combatant2Ready = true;Combatant3Ready = true;Combatant4Ready = true;
             Combatant5Ready = true;Combatant6Ready = true;Combatant7Ready = true;Combatant8Ready = true;
