@@ -1,0 +1,91 @@
+
+body{
+  background-color: black;
+}
+
+#Encapsulation {
+  width: 300px;
+  margin-top: 50px;
+  border-color: #B22222;
+  color: white;
+}
+
+.ConBox {
+  float: left;
+  clear: left;
+}
+
+.ActivateButton {
+  width: 30px;
+  background-color: #B22222;
+}
+
+.ConField{
+  display: inline-block;
+  float: left;
+  margin-right: auto;  
+  background-color: grey;
+  color: white;
+  border-color: #B22222;
+  font-weight: bold;
+  width: 150px;  
+}
+
+.RangeField{
+  width: 35px;
+  float: left;
+  text-align: right;
+  background-color: grey;
+  color:white;
+}
+
+.Score{
+  width: 35px;
+  float: left;
+  text-align: right;
+  background-color: grey;
+  color:white;
+  vertical-align: text-top;
+}
+
+.Marker{
+  background-color: Black;
+  width: 30px;
+  height: 20px;
+  float: left;
+  margin-left: 5px;
+}
+
+#ButtonBox {
+  border-color: #B22222;
+  float: left;
+  color: white;
+  margin-left: 5px;
+  margin-top: 5px;
+  clear:  left;  
+  width: 300px;
+  font-weight: bold;
+  font-family: monospace;
+}
+
+#ButtonBox button{
+  border-color: #B22222;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  font-family: monospace;
+}
+
+#ClearResults {
+    float: right;
+    margin-right: 28px;
+}
+
+#CurrentlyActiveBox {
+  float: left;
+  clear: left; 
+  width: 300px;
+}
+
+#CurrentlyActiveBox span{font-size: 20px;}
+
