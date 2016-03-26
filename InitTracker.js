@@ -200,10 +200,10 @@ $('#Initiate').click(Initiate);
                      
 function Initiate(){
     
-    //if (!(Combatant1&&Combatant2&&Combatant3&&Combatant4&&Combatant5&&Combatant6&&Combatant7&&Combatant8&&Combatant9&&Combatant10)) {
-    //    $('#CA').text('Add A Participant');
-    //    return;
-    //}
+    if ((!Combatant1&&!Combatant2&&!Combatant3&&!Combatant4&&!Combatant5&&!Combatant6&&!Combatant7&&!Combatant8&&!Combatant9&&!Combatant10)) {
+        $('#CA').text('Add Participant');
+        return;
+    }
     
     var ScoresArray = []
   
