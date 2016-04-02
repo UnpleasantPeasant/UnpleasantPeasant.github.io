@@ -2,6 +2,7 @@ var main = function() {
 
 var CurrentInitiativeHolder = 0;
 var CurrentInitiativeValue = 0;
+var InitiativeRolled = false;
 var Score1=Score2=Score3=Score4=Score5=Score6=Score7=Score8=Score9=Score10 = 0;
 var Combatant1= false;
 var Combatant2= false;
@@ -205,6 +206,8 @@ function Initiate(){
         return;
     }
     
+    InitiativeRolled = true;
+    
     var ScoresArray = []
   
     if (Combatant1){
@@ -284,11 +287,18 @@ function hasDuplicates(array) {
 $('#Next').click(Next);
 function Next() {
     
+    if(InitiativeRolled != true) {
+        $('#CA').text("Roll Initiative");  
+        return;
+    }
+    
     $('.Marker').css('background-color','black');
     $('#CA').text("");    
     
-    var Max = Math.max(Score1,Score2,Score3,Score4,Score5,Score6,Score7,Score8);
-    var Min = Math.min(Score1,Score2,Score3,Score4,Score5,Score6,Score7,Score8);    
+    var Max = Math.max(Score1,Score2,Score3,Score4,Score5,Score6,Score7,Score8,Score9,Score10);
+    var Min = Math.min(Score1,Score2,Score3,Score4,Score5,Score6,Score7,Score8,Score9,Score10);
+    
+    console.log(Min);
     
     for (var i = Max+1; i > Min - 5; i--) 
     {
@@ -363,11 +373,10 @@ function Next() {
             break;
         }
         if (i === Min - 1) {
-            Combatant1Ready = true;Combatant2Ready = true;Combatant3Ready = true;Combatant4Ready = true;
-            Combatant5Ready = true;Combatant6Ready = true;Combatant7Ready = true;Combatant8Ready = true;
-            Combatant9Ready = true;Combatant10Ready = true;
-            console.log("Reset");
-            Next();
+                Combatant1Ready = true;Combatant2Ready = true;Combatant3Ready = true;Combatant4Ready = true;
+                Combatant5Ready = true;Combatant6Ready = true;Combatant7Ready = true;Combatant8Ready = true;
+                Combatant9Ready = true;Combatant10Ready = true;
+                $('#CA').text('New Round');
         }
     }
 }
