@@ -30,15 +30,15 @@ $('#ActivateButton1').click(function(){
     if (Combatant1) {
         $(this).css('background-color','#B22222');
         $(this).text('&');
-        $("#ConField1,#numField1,#Score1").prop('disabled', true);
-        $("#ConField1,#numField1,#Score1").css('background-color','grey');
+        $("#ConField1,#numField1").prop('disabled', true);
+        $("#ConField1,#numField1").css('background-color','grey');
         $('#numField1,#Score1').val(0);
         Combatant1 = false;
     }else{
         $(this).css('background-color','Green');
         $(this).text('*');
-        $("#ConField1,#numField1,#Score1").prop('disabled', false);
-        $("#ConField1,#numField1,#Score1").css('background-color','black');        
+        $("#ConField1,#numField1").prop('disabled', false);
+        $("#ConField1,#numField1").css('background-color','black');        
         Combatant1 = true;
     }
 });
@@ -47,15 +47,15 @@ $('#ActivateButton2').click(function(){
     if (Combatant2) {
         $(this).css('background-color','#B22222');
         $(this).text('&');
-        $("#ConField2,#numField2,#Score2").prop('disabled', true);
-        $("#ConField2,#numField2,#Score2").css('background-color','grey');
+        $("#ConField2,#numField2").prop('disabled', true);
+        $("#ConField2,#numField2").css('background-color','grey');
         $('#numField2,#Score2').val(0);
         Combatant2 = false;
     }else{
         $(this).css('background-color','Green');
         $(this).text('*');
-        $("#ConField2,#numField2,#Score2").prop('disabled', false);
-        $("#ConField2,#numField2,#Score2").css('background-color','black');        
+        $("#ConField2,#numField2").prop('disabled', false);
+        $("#ConField2,#numField2").css('background-color','black');        
         Combatant2 = true;
     }
 });
@@ -64,15 +64,15 @@ $('#ActivateButton3').click(function(){
     if (Combatant3) {
         $(this).css('background-color','#B22222');
         $(this).text('&');
-        $("#ConField3,#numField3,#Score3").prop('disabled', true);
-        $("#ConField3,#numField3,#Score3").css('background-color','grey');
+        $("#ConField3,#numField3").prop('disabled', true);
+        $("#ConField3,#numField3").css('background-color','grey');
         $('#numField3,#Score3').val(0);
         Combatant3 = false;
     }else{
         $(this).css('background-color','Green');
         $(this).text('*');
-        $("#ConField3,#numField3,#Score3").prop('disabled', false);
-        $("#ConField3,#numField3,#Score3").css('background-color','black');        
+        $("#ConField3,#numField3").prop('disabled', false);
+        $("#ConField3,#numField3").css('background-color','black');        
         Combatant3 = true;
     }
 });
@@ -81,15 +81,15 @@ $('#ActivateButton4').click(function(){
     if (Combatant4) {
         $(this).css('background-color','#B22222');
         $(this).text('&');
-        $("#ConField4,#numField4,#Score4").prop('disabled', true);
-        $("#ConField4,#numField4,#Score4").css('background-color','grey');
+        $("#ConField4,#numField4").prop('disabled', true);
+        $("#ConField4,#numField4").css('background-color','grey');
         $('#numField4,#Score4').val(0);
         Combatant4 = false;
     }else{
         $(this).css('background-color','Green');
         $(this).text('*');
-        $("#ConField4,#numField4,#Score4").prop('disabled', false);
-        $("#ConField4,#numField4,#Score4").css('background-color','black');        
+        $("#ConField4,#numField4").prop('disabled', false);
+        $("#ConField4,#numField4").css('background-color','black');        
         Combatant4 = true;
     }
 });
@@ -98,15 +98,15 @@ $('#ActivateButton5').click(function(){
     if (Combatant5) {
         $(this).css('background-color','#B22222');
         $(this).text('&');
-        $("#ConField5,#numField5,#Score5").prop('disabled', true);
-        $("#ConField5,#numField5,#Score5").css('background-color','grey');
+        $("#ConField5,#numField5").prop('disabled', true);
+        $("#ConField5,#numField5").css('background-color','grey');
         $('#numField5,#Score5').val(0);
         Combatant5 = false;
     }else{
         $(this).css('background-color','Green');
         $(this).text('*');
-        $("#ConField5,#numField5,#Score5").prop('disabled', false);
-        $("#ConField5,#numField5,#Score5").css('background-color','black');
+        $("#ConField5,#numField5").prop('disabled', false);
+        $("#ConField5,#numField5").css('background-color','black');
         Combatant5 = true;
     }
 });
@@ -115,15 +115,15 @@ $('#ActivateButton6').click(function(){
     if (Combatant6) {
         $(this).css('background-color','#B22222');
         $(this).text('&');
-        $("#ConField6,#numField6,#Score6").prop('disabled', true);
-        $("#ConField6,#numField6,#Score6").css('background-color','grey');
+        $("#ConField6,#numField6").prop('disabled', true);
+        $("#ConField6,#numField6").css('background-color','grey');
         $('#numField6,#Score6').val(0);
         Combatant6 = false;
     }else{
         $(this).css('background-color','Green');
         $(this).text('*');
-        $("#ConField6,#numField6,#Score6").prop('disabled', false);
-        $("#ConField6,#numField6,#Score6").css('background-color','black');        
+        $("#ConField6,#numField6").prop('disabled', false);
+        $("#ConField6,#numField6").css('background-color','black');        
         Combatant6 = true;
     }
 });
@@ -132,15 +132,15 @@ $('#ActivateButton7').click(function(){
     if (Combatant7) {
         $(this).css('background-color','#B22222');
         $(this).text('&');
-        $("#ConField7,#numField7,#Score7").prop('disabled', true);
-        $("#ConField7,#numField7,#Score7").css('background-color','grey');
+        $("#ConField7,#numField7").prop('disabled', true);
+        $("#ConField7,#numField7").css('background-color','grey');
         $('#numField7,#Score7').val(0);
         Combatant7 = false;
     }else{
         $(this).css('background-color','Green');
         $(this).text('*');
-        $("#ConField7,#numField7,#Score7").prop('disabled', false);
-        $("#ConField7,#numField7,#Score7").css('background-color','black');        
+        $("#ConField7,#numField7").prop('disabled', false);
+        $("#ConField7,#numField7").css('background-color','black');        
         Combatant7 = true;
     }
 });
@@ -149,15 +149,15 @@ $('#ActivateButton8').click(function(){
     if (Combatant8) {
         $(this).css('background-color','#B22222');
         $(this).text('&');
-        $("#ConField8,#numField8,#Score8").prop('disabled', true);
-        $("#ConField8,#numField8,#Score8").css('background-color','grey');
+        $("#ConField8,#numField8").prop('disabled', true);
+        $("#ConField8,#numField8").css('background-color','grey');
         $('#numField8,#Score8').val(0);
         Combatant8 = false;
     }else{
         $(this).css('background-color','Green');
         $(this).text('*');
-        $("#ConField8,#numField8,#Score8").prop('disabled', false);
-        $("#ConField8,#numField8,#Score8").css('background-color','black');        
+        $("#ConField8,#numField8").prop('disabled', false);
+        $("#ConField8,#numField8").css('background-color','black');        
         Combatant8 = true;
     }
 });
@@ -166,15 +166,15 @@ $('#ActivateButton9').click(function(){
     if (Combatant9) {
         $(this).css('background-color','#B22222');
         $(this).text('&');
-        $("#ConField9,#numField9,#Score9").prop('disabled', true);
-        $("#ConField9,#numField9,#Score9").css('background-color','grey');
+        $("#ConField9,#numField9").prop('disabled', true);
+        $("#ConField9,#numField9").css('background-color','grey');
         $('#numField9,#Score9').val(0);
         Combatant9 = false;
     }else{
         $(this).css('background-color','Green');
         $(this).text('*');
-        $("#ConField9,#numField9,#Score9").prop('disabled', false);
-        $("#ConField9,#numField9,#Score9").css('background-color','black');        
+        $("#ConField9,#numField9").prop('disabled', false);
+        $("#ConField9,#numField9").css('background-color','black');        
         Combatant9 = true;
     }
 });
@@ -183,15 +183,15 @@ $('#ActivateButton10').click(function(){
     if (Combatant10) {
         $(this).css('background-color','#B22222');
         $(this).text('&');
-        $("#ConField10,#numField10,#Score10").prop('disabled', true);
-        $("#ConField10,#numField10,#Score10").css('background-color','grey');
+        $("#ConField10,#numField10").prop('disabled', true);
+        $("#ConField10,#numField10").css('background-color','grey');
         $('#numField10,#Score10').val(0);
         Combatant10 = false;
     }else{
         $(this).css('background-color','Green');
         $(this).text('*');
-        $("#ConField10,#numField10,#Score10").prop('disabled', false);
-        $("#ConField10,#numField10,#Score10").css('background-color','black');        
+        $("#ConField10,#numField10").prop('disabled', false);
+        $("#ConField10,#numField10").css('background-color','black');        
         Combatant10 = true;
     }
 });
@@ -209,52 +209,52 @@ function Initiate(){
   
     if (Combatant1){
         Score1 = parseFloat($('#numField1').val()) + parseFloat(Math.floor((Math.random()*20)+1));
-        $('#Score1').val(Score1);
+        $('#Score1').text(Score1);
         ScoresArray.push(Score1);
     };
     if (Combatant2){
         Score2 = parseFloat($('#numField2').val()) + parseFloat(Math.floor((Math.random()*20)+1));
-        $('#Score2').val(Score2);
+        $('#Score2').text(Score2);
         ScoresArray.push(Score2);
     };
     if (Combatant3){
         Score3 = parseFloat($('#numField3').val()) + parseFloat(Math.floor((Math.random()*20)+1));
-        $('#Score3').val(Score3);
+        $('#Score3').text(Score3);
         ScoresArray.push(Score3);
     };
     if (Combatant4){
         Score4 = parseFloat($('#numField4').val()) + parseFloat(Math.floor((Math.random()*20)+1));
-        $('#Score4').val(Score4);
+        $('#Score4').text(Score4);
         ScoresArray.push(Score4);
     }
     if (Combatant5){
         Score5 = parseFloat($('#numField5').val()) + parseFloat(Math.floor((Math.random()*20)+1));
-        $('#Score5').val(Score5);
+        $('#Score5').text(Score5);
         ScoresArray.push(Score5);
     }
     if (Combatant6){
         Score6 = parseFloat($('#numField6').val()) + parseFloat(Math.floor((Math.random()*20)+1));
-        $('#Score6').val(Score6);
+        $('#Score6').text(Score6);
         ScoresArray.push(Score6);
     }
     if (Combatant7){
         Score7 = parseFloat($('#numField7').val()) + parseFloat(Math.floor((Math.random()*20)+1));
-        $('#Score7').val(Score7);
+        $('#Score7').text(Score7);
         ScoresArray.push(Score7);
     }
     if (Combatant8){
         Score8 = parseFloat($('#numField8').val()) + parseFloat(Math.floor((Math.random()*20)+1));
-        $('#Score8').val(Score8);
+        $('#Score8').text(Score8);
         ScoresArray.push(Score8);
     }
     if (Combatant9){
         Score9 = parseFloat($('#numField9').val()) + parseFloat(Math.floor((Math.random()*20)+1));
-        $('#Score9').val(Score9);
+        $('#Score9').text(Score9);
         ScoresArray.push(Score9);
     }    
     if (Combatant10){
         Score10 = parseFloat($('#numField10').val()) + parseFloat(Math.floor((Math.random()*20)+1));
-        $('#Score10').val(Score10);
+        $('#Score10').text(Score10);
         ScoresArray.push(Score10);
     }
     
@@ -376,7 +376,7 @@ function Next() {
 $('#ClearResults').click(ClearResults);
 function ClearResults() {
     Score1 = 0;Score2 = 0;Score3 = 0;Score4 = 0;Score5 = 0;Score6 = 0;Score7 = 0;Score8 = 0;Score9 = 0; Score10 = 0;
-    $(".Score").val(0);
+    $(".Score").text('');
     $('.Marker').css('background-color','black');
     $('#CA').text("");    
 }
