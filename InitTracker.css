@@ -97,18 +97,16 @@ body{
 }
 
 #CurrentlyActiveBox {
-  float: left;
   clear: left; 
   width: 310px;
+  text-align: center;
+  height: 23px;
 }
 
 #Next {
-  width: 260px;
-  height: 50px;
-  margin-left: 15px;
-  border-radius: 10px;
-  font-size: xx-large;
-}
+  width: 180px;
+  margin-top: 5px;
+  }
 
 
 #CurrentlyActiveBox span{font-size: 20px;}
