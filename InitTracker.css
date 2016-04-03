@@ -56,14 +56,14 @@ body{
 }
 
 .Score{
-  width: 35px;
-  height: 24px;
+  width: 50px;
   float: left;
   text-align: right;
-  font-size: larger;
-  border-bottom-width: thin;
-  border-bottom-color: #B22222;
-  border-bottom-style: dashed;
+  background-color: black;
+  color:white;
+  border: 0px none #EBE9ED;
+  font-size: large;
+  text-align: right;
 }
 
 
