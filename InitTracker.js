@@ -112,7 +112,7 @@ $('#ActivateButton4').click(function(){
         $("#ConField4,#numField4").css('background-color','black');        
         Combatant[4] = 1;
     }else if(Combatant[4] === 1){
-        $(this).css('background-color','#FFCC44');
+        $(this).css('background-color','#FFCC33');
         $(this).text('@');
         Combatant[4] = 2;
     }else if(Combatant[4] === 2){
@@ -140,7 +140,7 @@ $('#ActivateButton5').click(function(){
         $("#ConField5,#numField5").css('background-color','black');        
         Combatant[5] = 1;
     }else if(Combatant[5] === 1){
-        $(this).css('background-color','#FFCC55');
+        $(this).css('background-color','#FFCC33');
         $(this).text('@');
         Combatant[5] = 2;
     }else if(Combatant[5] === 2){
@@ -168,7 +168,7 @@ $('#ActivateButton6').click(function(){
         $("#ConField6,#numField6").css('background-color','black');        
         Combatant[6] = 1;
     }else if(Combatant[6] === 1){
-        $(this).css('background-color','#FFCC66');
+        $(this).css('background-color','#FFCC33');
         $(this).text('@');
         Combatant[6] = 2;
     }else if(Combatant[6] === 2){
@@ -196,11 +196,11 @@ $('#ActivateButton7').click(function(){
         $("#ConField7,#numField7").css('background-color','black');        
         Combatant[7] = 1;
     }else if(Combatant[7] === 1){
-        $(this).css('background-color','#FFCC77');
+        $(this).css('background-color','#FFCC33');
         $(this).text('@');
         Combatant[7] = 2;
     }else if(Combatant[7] === 2){
-        $(this).css('background-color','#770099');
+        $(this).css('background-color','#660099');
         $(this).text('D');
         Combatant[7] = 3;
     }else if(Combatant[7] === 3){
@@ -224,11 +224,11 @@ $('#ActivateButton8').click(function(){
         $("#ConField8,#numField8").css('background-color','black');        
         Combatant[8] = 1;
     }else if(Combatant[8] === 1){
-        $(this).css('background-color','#FFCC88');
+        $(this).css('background-color','#FFCC33');
         $(this).text('@');
         Combatant[8] = 2;
     }else if(Combatant[8] === 2){
-        $(this).css('background-color','#880099');
+        $(this).css('background-color','#660099');
         $(this).text('D');
         Combatant[8] = 3;
     }else if(Combatant[8] === 3){
@@ -252,11 +252,11 @@ $('#ActivateButton9').click(function(){
         $("#ConField9,#numField9").css('background-color','black');        
         Combatant[9] = 1;
     }else if(Combatant[9] === 1){
-        $(this).css('background-color','#FFCC99');
+        $(this).css('background-color','#FFCC33');
         $(this).text('@');
         Combatant[9] = 2;
     }else if(Combatant[9] === 2){
-        $(this).css('background-color','#990099');
+        $(this).css('background-color','#660099');
         $(this).text('D');
         Combatant[9] = 3;
     }else if(Combatant[9] === 3){
@@ -280,11 +280,11 @@ $('#ActivateButton10').click(function(){
         $("#ConField10,#numField10").css('background-color','black');        
         Combatant[10] = 1;
     }else if(Combatant[10] === 1){
-        $(this).css('background-color','#FFCC1010');
+        $(this).css('background-color','#FFCC33');
         $(this).text('@');
         Combatant[10] = 2;
     }else if(Combatant[10] === 2){
-        $(this).css('background-color','#10100099');
+        $(this).css('background-color','#660099');
         $(this).text('D');
         Combatant[10] = 3;
     }else if(Combatant[10] === 3){
