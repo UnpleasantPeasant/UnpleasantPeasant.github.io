@@ -453,9 +453,7 @@ function Next() {
     
     var Max = Math.max(Score1,Score2,Score3,Score4,Score5,Score6,Score7,Score8,Score9,Score10);
     var Min = Math.min(Score1,Score2,Score3,Score4,Score5,Score6,Score7,Score8,Score9,Score10);
-    
-    console.log(Min);
-    
+
     for (var i = Max+1; i > Min - 5; i--) 
     {
        if (Combatant[1] > 0 && Score1 === i && CurrentInitiativeHolder != 1 && Combatant1Ready) {
@@ -563,6 +561,16 @@ function ResetRoundCounter() {
     $('#RoundCounter').text(RoundCounter);
 }
 
+$("#Score1").change(function(){Score1 = $("#Score1").val();});
+$("#Score2").change(function(){Score2 = $("#Score2").val();});
+$("#Score3").change(function(){Score3 = $("#Score3").val();});
+$("#Score4").change(function(){Score4 = $("#Score4").val();});
+$("#Score5").change(function(){Score5 = $("#Score5").val();});
+$("#Score6").change(function(){Score6 = $("#Score6").val();});
+$("#Score7").change(function(){Score7 = $("#Score7").val();});
+$("#Score8").change(function(){Score8 = $("#Score8").val();});
+$("#Score9").change(function(){Score9 = $("#Score9").val();});
+$("#Score10").change(function(){Score10 = $("#Score10").val();});
 
 }
 $(document).ready(main);
