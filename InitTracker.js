@@ -96,7 +96,7 @@ $('#ActivateButton3').click(function(){
         $(this).text('L');
         Combatant[3] = 4;
     }else if(Combatant[3] === 4){
-        $(this).css('background-color','#B33333');
+        $(this).css('background-color','#B22222');
         $(this).text('*');
         $("#ConField3,#numField3").prop('disabled', true);
         $("#ConField3,#numField3").css('background-color','grey');
@@ -124,7 +124,7 @@ $('#ActivateButton4').click(function(){
         $(this).text('L');
         Combatant[4] = 4;
     }else if(Combatant[4] === 4){
-        $(this).css('background-color','#B44444');
+        $(this).css('background-color','#B22222');
         $(this).text('*');
         $("#ConField4,#numField4").prop('disabled', true);
         $("#ConField4,#numField4").css('background-color','grey');
@@ -152,7 +152,7 @@ $('#ActivateButton5').click(function(){
         $(this).text('L');
         Combatant[5] = 4;
     }else if(Combatant[5] === 4){
-        $(this).css('background-color','#B55555');
+        $(this).css('background-color','#B22222');
         $(this).text('*');
         $("#ConField5,#numField5").prop('disabled', true);
         $("#ConField5,#numField5").css('background-color','grey');
@@ -180,7 +180,7 @@ $('#ActivateButton6').click(function(){
         $(this).text('L');
         Combatant[6] = 4;
     }else if(Combatant[6] === 4){
-        $(this).css('background-color','#B66666');
+        $(this).css('background-color','#B22222');
         $(this).text('*');
         $("#ConField6,#numField6").prop('disabled', true);
         $("#ConField6,#numField6").css('background-color','grey');
@@ -208,7 +208,7 @@ $('#ActivateButton7').click(function(){
         $(this).text('L');
         Combatant[7] = 4;
     }else if(Combatant[7] === 4){
-        $(this).css('background-color','#B77777');
+        $(this).css('background-color','#B22222');
         $(this).text('*');
         $("#ConField7,#numField7").prop('disabled', true);
         $("#ConField7,#numField7").css('background-color','grey');
@@ -236,7 +236,7 @@ $('#ActivateButton8').click(function(){
         $(this).text('L');
         Combatant[8] = 4;
     }else if(Combatant[8] === 4){
-        $(this).css('background-color','#B88888');
+        $(this).css('background-color','#B22222');
         $(this).text('*');
         $("#ConField8,#numField8").prop('disabled', true);
         $("#ConField8,#numField8").css('background-color','grey');
@@ -264,7 +264,7 @@ $('#ActivateButton9').click(function(){
         $(this).text('L');
         Combatant[9] = 4;
     }else if(Combatant[9] === 4){
-        $(this).css('background-color','#B99999');
+        $(this).css('background-color','#B22222');
         $(this).text('*');
         $("#ConField9,#numField9").prop('disabled', true);
         $("#ConField9,#numField9").css('background-color','grey');
@@ -292,7 +292,7 @@ $('#ActivateButton10').click(function(){
         $(this).text('L');
         Combatant[10] = 4;
     }else if(Combatant[10] === 4){
-        $(this).css('background-color','#B1010101010');
+        $(this).css('background-color','#B22222');
         $(this).text('*');
         $("#ConField10,#numField10").prop('disabled', true);
         $("#ConField10,#numField10").css('background-color','grey');
