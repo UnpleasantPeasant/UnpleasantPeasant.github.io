@@ -470,6 +470,17 @@ function Next() {
     " Combatant9 : "+ Score9 + 
     " Combatant10 : "+ Score10);
     
+    console.log("Combatant1 : "+ Combatant1Ready +
+    " Combatant2 : "+ Combatant2Ready + 
+    " Combatant3 : "+ Combatant3Ready + 
+    " Combatant4 : "+ Combatant4Ready + 
+    " Combatant5 : "+ Combatant5Ready + 
+    " Combatant6 : "+ Combatant6Ready + 
+    " Combatant7 : "+ Combatant7Ready + 
+    " Combatant8 : "+ Combatant8Ready + 
+    " Combatant9 : "+ Combatant9Ready + 
+    " Combatant10 : "+ Combatant10Ready);
+    
     $('.Marker').css('background-color','black');
     $('#CA').text("");    
     
