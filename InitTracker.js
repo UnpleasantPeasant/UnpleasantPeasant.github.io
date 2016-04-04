@@ -448,6 +448,17 @@ function Next() {
         return;
     }
     
+    console.log("Combatant1 Ready: "+ Combatant1Ready + "<br>" +
+    "Combatant2 Ready: "+ Combatant2Ready + "<br>" +
+    "Combatant3 Ready: "+ Combatant3Ready + "<br>" +
+    "Combatant4 Ready: "+ Combatant4Ready + "<br>" +
+    "Combatant5 Ready: "+ Combatant5Ready + "<br>" +
+    "Combatant6 Ready: "+ Combatant6Ready + "<br>" +
+    "Combatant7 Ready: "+ Combatant7Ready + "<br>" +
+    "Combatant8 Ready: "+ Combatant8Ready + "<br>" +
+    "Combatant9 Ready: "+ Combatant9Ready + "<br>" +
+    "Combatant10 Ready: "+ Combatant10Ready + "<br>" +)
+    
     $('.Marker').css('background-color','black');
     $('#CA').text("");    
     
