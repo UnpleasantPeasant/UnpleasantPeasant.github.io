@@ -447,7 +447,7 @@ function Next() {
         $('#CA').text("Roll Initiative");  
         return;
     }
-    
+    console.log("Current Inititative Holder: " + CurrentInitiativeHolder);
     console.log("Combatant1 : "+ Combatant[1] +
     " Combatant2 : "+ Combatant[2] + 
     " Combatant3 : "+ Combatant[3] + 
@@ -458,6 +458,17 @@ function Next() {
     " Combatant8 : "+ Combatant[8] + 
     " Combatant9 : "+ Combatant[9] + 
     " Combatant10 : "+ Combatant[10]);
+    
+     console.log("Combatant1 : "+ Score1 +
+    " Combatant2 : "+ Score2 + 
+    " Combatant3 : "+ Score3 + 
+    " Combatant4 : "+ Score4 + 
+    " Combatant5 : "+ Score5 + 
+    " Combatant6 : "+ Score6 + 
+    " Combatant7 : "+ Score7 + 
+    " Combatant8 : "+ Score8 + 
+    " Combatant9 : "+ Score9 + 
+    " Combatant10 : "+ Score10);
     
     $('.Marker').css('background-color','black');
     $('#CA').text("");    
