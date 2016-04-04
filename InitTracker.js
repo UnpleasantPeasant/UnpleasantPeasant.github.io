@@ -448,16 +448,16 @@ function Next() {
         return;
     }
     
-    console.log("Combatant1 Ready: "+ Combatant1Ready + "<br>" +
-    "Combatant2 Ready: "+ Combatant2Ready + "<br>" +
-    "Combatant3 Ready: "+ Combatant3Ready + "<br>" +
-    "Combatant4 Ready: "+ Combatant4Ready + "<br>" +
-    "Combatant5 Ready: "+ Combatant5Ready + "<br>" +
-    "Combatant6 Ready: "+ Combatant6Ready + "<br>" +
-    "Combatant7 Ready: "+ Combatant7Ready + "<br>" +
-    "Combatant8 Ready: "+ Combatant8Ready + "<br>" +
-    "Combatant9 Ready: "+ Combatant9Ready + "<br>" +
-    "Combatant10 Ready: "+ Combatant10Ready + "<br>");
+    console.log("Combatant1 : "+ Score1 +
+    "Combatant2 : "+ Score2 + 
+    "Combatant3 : "+ Score3 + 
+    "Combatant4 : "+ Score4 + 
+    "Combatant5 : "+ Score5 + 
+    "Combatant6 : "+ Score6 + 
+    "Combatant7 : "+ Score7 + 
+    "Combatant8 : "+ Score8 + 
+    "Combatant9 : "+ Score9 + 
+    "Combatant10 : "+ Score10);
     
     $('.Marker').css('background-color','black');
     $('#CA').text("");    
