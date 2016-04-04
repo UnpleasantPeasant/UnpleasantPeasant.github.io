@@ -600,16 +600,16 @@ function ResetRoundCounter() {
     $('#RoundCounter').text(RoundCounter);
 }
 
-$("#Score1").change(function(){Score1 = $("#Score1").val();Combatant1Ready = true;});
-$("#Score2").change(function(){Score2 = $("#Score2").val();Combatant2Ready = true;});
-$("#Score3").change(function(){Score3 = $("#Score3").val();Combatant3Ready = true;});
-$("#Score4").change(function(){Score4 = $("#Score4").val();Combatant4Ready = true;});
-$("#Score5").change(function(){Score5 = $("#Score5").val();Combatant5Ready = true;});
-$("#Score6").change(function(){Score6 = $("#Score6").val();Combatant6Ready = true;});
-$("#Score7").change(function(){Score7 = $("#Score7").val();Combatant7Ready = true;});
-$("#Score8").change(function(){Score8 = $("#Score8").val();Combatant8Ready = true;});
-$("#Score9").change(function(){Score9 = $("#Score9").val();Combatant9Ready = true;});
-$("#Score10").change(function(){Score10 = $("#Score10").val();Combatant10Ready = true;});
+$("#Score1").change(function(){Score1 = parseInt($("#Score1").val());Combatant1Ready = true;});
+$("#Score2").change(function(){Score2 = parseInt($("#Score2").val());Combatant2Ready = true;});
+$("#Score3").change(function(){Score3 = parseInt($("#Score3").val());Combatant3Ready = true;});
+$("#Score4").change(function(){Score4 = parseInt($("#Score4").val());Combatant4Ready = true;});
+$("#Score5").change(function(){Score5 = parseInt($("#Score5").val());Combatant5Ready = true;});
+$("#Score6").change(function(){Score6 = parseInt($("#Score6").val());Combatant6Ready = true;});
+$("#Score7").change(function(){Score7 = parseInt($("#Score7").val());Combatant7Ready = true;});
+$("#Score8").change(function(){Score8 = parseInt($("#Score8").val());Combatant8Ready = true;});
+$("#Score9").change(function(){Score9 = parseInt($("#Score9").val());Combatant9Ready = true;});
+$("#Score10").change(function(){Score10 = parseInt($("#Score10").val());Combatant10Ready = true;});
 
 }
 $(document).ready(main);
