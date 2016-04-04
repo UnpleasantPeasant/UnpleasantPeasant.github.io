@@ -447,53 +447,16 @@ function Next() {
         $('#CA').text("Roll Initiative");  
         return;
     }
-    console.log("Current Inititative Holder: " + CurrentInitiativeHolder);
-    console.log("Combatant1 : "+ Combatant[1] +
-    " Combatant2 : "+ Combatant[2] + 
-    " Combatant3 : "+ Combatant[3] + 
-    " Combatant4 : "+ Combatant[4] + 
-    " Combatant5 : "+ Combatant[5] + 
-    " Combatant6 : "+ Combatant[6] + 
-    " Combatant7 : "+ Combatant[7] + 
-    " Combatant8 : "+ Combatant[8] + 
-    " Combatant9 : "+ Combatant[9] + 
-    " Combatant10 : "+ Combatant[10]);
-    
-     console.log("Combatant1 : "+ Score1 +
-    " Combatant2 : "+ Score2 + 
-    " Combatant3 : "+ Score3 + 
-    " Combatant4 : "+ Score4 + 
-    " Combatant5 : "+ Score5 + 
-    " Combatant6 : "+ Score6 + 
-    " Combatant7 : "+ Score7 + 
-    " Combatant8 : "+ Score8 + 
-    " Combatant9 : "+ Score9 + 
-    " Combatant10 : "+ Score10);
-    
-    console.log("Combatant1 : "+ Combatant1Ready +
-    " Combatant2 : "+ Combatant2Ready + 
-    " Combatant3 : "+ Combatant3Ready + 
-    " Combatant4 : "+ Combatant4Ready + 
-    " Combatant5 : "+ Combatant5Ready + 
-    " Combatant6 : "+ Combatant6Ready + 
-    " Combatant7 : "+ Combatant7Ready + 
-    " Combatant8 : "+ Combatant8Ready + 
-    " Combatant9 : "+ Combatant9Ready + 
-    " Combatant10 : "+ Combatant10Ready);
     
     $('.Marker').css('background-color','black');
     $('#CA').text("");    
     
     var Max = Math.max(Score1,Score2,Score3,Score4,Score5,Score6,Score7,Score8,Score9,Score10);
     var Min = Math.min(Score1,Score2,Score3,Score4,Score5,Score6,Score7,Score8,Score9,Score10);
-    console.log("Min: "+ Min);
-    console.log("Max: "+ Max);
-    
+
     for (var i = Max+1; i > Min - 5; i--) 
     {
-        console.log("I = " + i);
        if (Combatant[1] > 0 && Score1 === i && CurrentInitiativeHolder != 1 && Combatant1Ready) {
-           console.log("Fell into 1");
             $('#Marker1').css('background-color','green');
             $('#CA').text($('#ConField1').val());
             Combatant1Ready = false;
@@ -501,7 +464,6 @@ function Next() {
             break;
        }
        if (Combatant[2] > 0 && Score2 === i && CurrentInitiativeHolder != 2 && Combatant2Ready) {
-           console.log("Fell into 2");
             $('#Marker2').css('background-color','green');
             $('#CA').text($('#ConField2').val());
             Combatant2Ready = false;
@@ -509,7 +471,6 @@ function Next() {
             break;
         }
         if (Combatant[3] > 0 && Score3 === i && CurrentInitiativeHolder != 3 && Combatant3Ready) {
-            console.log("Fell into 3");
             $('#Marker3').css('background-color','green');
             $('#CA').text($('#ConField3').val());
             Combatant3Ready = false;
@@ -588,7 +549,6 @@ function ClearResults() {
 
 $('#AdvancedButton').click(ShowAdvancedBox);
 function ShowAdvancedBox() {
-    console.log('In')
     if ($('#AdvancedBox').css('display') == 'none') {
         $('#AdvancedBox').show();
     }else {$('#AdvancedBox').hide();}
