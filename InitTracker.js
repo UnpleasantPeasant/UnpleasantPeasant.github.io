@@ -449,15 +449,15 @@ function Next() {
     }
     
     console.log("Combatant1 : "+ Score1 +
-    "Combatant2 : "+ Score2 + 
-    "Combatant3 : "+ Score3 + 
-    "Combatant4 : "+ Score4 + 
-    "Combatant5 : "+ Score5 + 
-    "Combatant6 : "+ Score6 + 
-    "Combatant7 : "+ Score7 + 
-    "Combatant8 : "+ Score8 + 
-    "Combatant9 : "+ Score9 + 
-    "Combatant10 : "+ Score10);
+    " Combatant2 : "+ Combatant[2] + 
+    " Combatant3 : "+ Combatant[3] + 
+    " Combatant4 : "+ Combatant[4] + 
+    " Combatant5 : "+ Combatant[5] + 
+    " Combatant6 : "+ Combatant[6] + 
+    " Combatant7 : "+ Combatant[7] + 
+    " Combatant8 : "+ Combatant[8] + 
+    " Combatant9 : "+ Combatant[9] + 
+    " Combatant10 : "+ Combatant[10]);
     
     $('.Marker').css('background-color','black');
     $('#CA').text("");    
