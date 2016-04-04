@@ -448,7 +448,7 @@ function Next() {
         return;
     }
     
-    console.log("Combatant1 : "+ Score1 +
+    console.log("Combatant1 : "+ Combatant[1] +
     " Combatant2 : "+ Combatant[2] + 
     " Combatant3 : "+ Combatant[3] + 
     " Combatant4 : "+ Combatant[4] + 
@@ -464,10 +464,14 @@ function Next() {
     
     var Max = Math.max(Score1,Score2,Score3,Score4,Score5,Score6,Score7,Score8,Score9,Score10);
     var Min = Math.min(Score1,Score2,Score3,Score4,Score5,Score6,Score7,Score8,Score9,Score10);
-
+    console.log("Min: "+ Min);
+    console.log("Max: "+ Max);
+    
     for (var i = Max+1; i > Min - 5; i--) 
     {
+        console.log("I = " + i);
        if (Combatant[1] > 0 && Score1 === i && CurrentInitiativeHolder != 1 && Combatant1Ready) {
+           console.log("Fell into 1");
             $('#Marker1').css('background-color','green');
             $('#CA').text($('#ConField1').val());
             Combatant1Ready = false;
@@ -475,6 +479,7 @@ function Next() {
             break;
        }
        if (Combatant[2] > 0 && Score2 === i && CurrentInitiativeHolder != 2 && Combatant2Ready) {
+           console.log("Fell into 2");
             $('#Marker2').css('background-color','green');
             $('#CA').text($('#ConField2').val());
             Combatant2Ready = false;
@@ -482,6 +487,7 @@ function Next() {
             break;
         }
         if (Combatant[3] > 0 && Score3 === i && CurrentInitiativeHolder != 3 && Combatant3Ready) {
+            console.log("Fell into 3");
             $('#Marker3').css('background-color','green');
             $('#CA').text($('#ConField3').val());
             Combatant3Ready = false;
