@@ -457,7 +457,7 @@ function Next() {
     "Combatant7 Ready: "+ Combatant7Ready + "<br>" +
     "Combatant8 Ready: "+ Combatant8Ready + "<br>" +
     "Combatant9 Ready: "+ Combatant9Ready + "<br>" +
-    "Combatant10 Ready: "+ Combatant10Ready + "<br>" +)
+    "Combatant10 Ready: "+ Combatant10Ready + "<br>");
     
     $('.Marker').css('background-color','black');
     $('#CA').text("");    
