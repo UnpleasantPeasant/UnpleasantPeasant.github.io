@@ -318,102 +318,92 @@ function Initiate(){
     if (Combatant[1] > 0){
         var Score1first = parseFloat($('#numField1').val()) + parseFloat(Math.floor((Math.random()*20)+1));
         var Score1second = parseFloat($('#numField1').val()) + parseFloat(Math.floor((Math.random()*20)+1));
-        if (Combatant[1] === 1) {Score1 = Score1first; $("#RollResults").append($("#ConField1").val() + " rolled: " + Score1 + "<br>");}
-        else if (Combatant[1] === 2) {Score1 = Math.max(Score1first,Score1second); $("#RollResults").append($("#ConField1").val() + " rolled: " + Score1first + " and " + Score1second + " with Advantage<br>");}
-        else if (Combatant[1] === 3) {Score1 = Math.min(Score1first,Score1second); $("#RollResults").append($("#ConField1").val() + " rolled: " + Score1first + " and " + Score1second + " with Disadvantage<br>");}
+        if (Combatant[1] === 1) {Score1 = Score1first; $("#RollResults").append($("#ConField1").val() + " rolled: " + Score1 + "<br>"); ScoresArray.push(Score1);}
+        else if (Combatant[1] === 2) {Score1 = Math.max(Score1first,Score1second); $("#RollResults").append($("#ConField1").val() + " rolled: " + Score1first + " and " + Score1second + " with Advantage<br>"); ScoresArray.push(Score1);}
+        else if (Combatant[1] === 3) {Score1 = Math.min(Score1first,Score1second); $("#RollResults").append($("#ConField1").val() + " rolled: " + Score1first + " and " + Score1second + " with Disadvantage<br>");  ScoresArray.push(Score1);}
         else if (Combatant[1] === 4) {Score1 = Score1; $("#RollResults").append($("#ConField1").val() + " kept the roll: " + Score1 + "<br>");}   
         $('#Score1').val(Score1);
-        ScoresArray.push(Score1);
     };
     if (Combatant[2] > 0){
         var Score2first = parseFloat($('#numField2').val()) + parseFloat(Math.floor((Math.random()*20)+1));
         var Score2second = parseFloat($('#numField2').val()) + parseFloat(Math.floor((Math.random()*20)+1));
-        if (Combatant[2] === 1) {Score2 = Score2first; $("#RollResults").append($("#ConField2").val() + " rolled: " + Score2 + "<br>");}
-        else if (Combatant[2] === 2) {Score2 = Math.max(Score2first,Score2second); $("#RollResults").append($("#ConField2").val() + " rolled: " + Score2first + " and " + Score2second + " with Advantage<br>");}
-        else if (Combatant[2] === 3) {Score2 = Math.min(Score2first,Score2second); $("#RollResults").append($("#ConField2").val() + " rolled: " + Score2first + " and " + Score2second + " with Disadvantage<br>");}
+        if (Combatant[2] === 1) {Score2 = Score2first; $("#RollResults").append($("#ConField2").val() + " rolled: " + Score2 + "<br>");ScoresArray.push(Score2);}
+        else if (Combatant[2] === 2) {Score2 = Math.max(Score2first,Score2second); $("#RollResults").append($("#ConField2").val() + " rolled: " + Score2first + " and " + Score2second + " with Advantage<br>");ScoresArray.push(Score2);}
+        else if (Combatant[2] === 3) {Score2 = Math.min(Score2first,Score2second); $("#RollResults").append($("#ConField2").val() + " rolled: " + Score2first + " and " + Score2second + " with Disadvantage<br>");ScoresArray.push(Score2);}
         else if (Combatant[2] === 4) {Score2 = Score2; $("#RollResults").append($("#ConField2").val() + " kept the roll: " + Score2 + "<br>");}   
         $('#Score2').val(Score2);
-        ScoresArray.push(Score2);
     };
     if (Combatant[3] > 0){
         var Score3first = parseFloat($('#numField3').val()) + parseFloat(Math.floor((Math.random()*20)+1));
         var Score3second = parseFloat($('#numField3').val()) + parseFloat(Math.floor((Math.random()*20)+1));
-        if (Combatant[3] === 1) {Score3 = Score3first; $("#RollResults").append($("#ConField3").val() + " rolled: " + Score3 + "<br>");}
-        else if (Combatant[3] === 2) {Score3 = Math.max(Score3first,Score3second); $("#RollResults").append($("#ConField3").val() + " rolled: " + Score3first + " and " + Score3second + " with Advantage<br>");}
-        else if (Combatant[3] === 3) {Score3 = Math.min(Score3first,Score3second); $("#RollResults").append($("#ConField3").val() + " rolled: " + Score3first + " and " + Score3second + " with Disadvantage<br>");}
+        if (Combatant[3] === 1) {Score3 = Score3first; $("#RollResults").append($("#ConField3").val() + " rolled: " + Score3 + "<br>");ScoresArray.push(Score3);}
+        else if (Combatant[3] === 2) {Score3 = Math.max(Score3first,Score3second); $("#RollResults").append($("#ConField3").val() + " rolled: " + Score3first + " and " + Score3second + " with Advantage<br>");ScoresArray.push(Score3);}
+        else if (Combatant[3] === 3) {Score3 = Math.min(Score3first,Score3second); $("#RollResults").append($("#ConField3").val() + " rolled: " + Score3first + " and " + Score3second + " with Disadvantage<br>");ScoresArray.push(Score3);}
         else if (Combatant[3] === 4) {Score3 = Score3; $("#RollResults").append($("#ConField3").val() + " kept the roll: " + Score3 + "<br>");}   
         $('#Score3').val(Score3);
-        ScoresArray.push(Score3);
     };
     if (Combatant[4] > 0){
         var Score4first = parseFloat($('#numField4').val()) + parseFloat(Math.floor((Math.random()*20)+1));
         var Score4second = parseFloat($('#numField4').val()) + parseFloat(Math.floor((Math.random()*20)+1));
-        if (Combatant[4] === 1) {Score4 = Score4first; $("#RollResults").append($("#ConField4").val() + " rolled: " + Score4 + "<br>");}
-        else if (Combatant[4] === 2) {Score4 = Math.max(Score4first,Score4second); $("#RollResults").append($("#ConField4").val() + " rolled: " + Score4first + " and " + Score4second + " with Advantage<br>");}
-        else if (Combatant[4] === 3) {Score4 = Math.min(Score4first,Score4second); $("#RollResults").append($("#ConField4").val() + " rolled: " + Score4first + " and " + Score4second + " with Disadvantage<br>");}
+        if (Combatant[4] === 1) {Score4 = Score4first; $("#RollResults").append($("#ConField4").val() + " rolled: " + Score4 + "<br>");ScoresArray.push(Score4);}
+        else if (Combatant[4] === 2) {Score4 = Math.max(Score4first,Score4second); $("#RollResults").append($("#ConField4").val() + " rolled: " + Score4first + " and " + Score4second + " with Advantage<br>");ScoresArray.push(Score4);}
+        else if (Combatant[4] === 3) {Score4 = Math.min(Score4first,Score4second); $("#RollResults").append($("#ConField4").val() + " rolled: " + Score4first + " and " + Score4second + " with Disadvantage<br>");ScoresArray.push(Score4);}
         else if (Combatant[4] === 4) {Score4 = Score4; $("#RollResults").append($("#ConField4").val() + " kept the roll: " + Score4 + "<br>");}   
         $('#Score4').val(Score4);
-        ScoresArray.push(Score4);
     }
     if (Combatant[5] > 0){
         var Score5first = parseFloat($('#numField5').val()) + parseFloat(Math.floor((Math.random()*20)+1));
         var Score5second = parseFloat($('#numField5').val()) + parseFloat(Math.floor((Math.random()*20)+1));
-        if (Combatant[5] === 1) {Score5 = Score5first; $("#RollResults").append($("#ConField5").val() + " rolled: " + Score5 + "<br>");}
-        else if (Combatant[5] === 2) {Score5 = Math.max(Score5first,Score5second); $("#RollResults").append($("#ConField5").val() + " rolled: " + Score5first + " and " + Score5second + " with Advantage<br>");}
-        else if (Combatant[5] === 3) {Score5 = Math.min(Score5first,Score5second); $("#RollResults").append($("#ConField5").val() + " rolled: " + Score5first + " and " + Score5second + " with Disadvantage<br>");}
+        if (Combatant[5] === 1) {Score5 = Score5first; $("#RollResults").append($("#ConField5").val() + " rolled: " + Score5 + "<br>");ScoresArray.push(Score5);}
+        else if (Combatant[5] === 2) {Score5 = Math.max(Score5first,Score5second); $("#RollResults").append($("#ConField5").val() + " rolled: " + Score5first + " and " + Score5second + " with Advantage<br>");ScoresArray.push(Score5);}
+        else if (Combatant[5] === 3) {Score5 = Math.min(Score5first,Score5second); $("#RollResults").append($("#ConField5").val() + " rolled: " + Score5first + " and " + Score5second + " with Disadvantage<br>");ScoresArray.push(Score5);}
         else if (Combatant[5] === 4) {Score5 = Score5; $("#RollResults").append($("#ConField5").val() + " kept the roll: " + Score5 + "<br>");}   
         $('#Score5').val(Score5);
-        ScoresArray.push(Score5);
     }
     if (Combatant[6] > 0){
         var Score6first = parseFloat($('#numField6').val()) + parseFloat(Math.floor((Math.random()*20)+1));
         var Score6second = parseFloat($('#numField6').val()) + parseFloat(Math.floor((Math.random()*20)+1));
-        if (Combatant[6] === 1) {Score6 = Score6first; $("#RollResults").append($("#ConField6").val() + " rolled: " + Score6 + "<br>");}
-        else if (Combatant[6] === 2) {Score6 = Math.max(Score6first,Score6second); $("#RollResults").append($("#ConField6").val() + " rolled: " + Score6first + " and " + Score6second + " with Advantage<br>");}
-        else if (Combatant[6] === 3) {Score6 = Math.min(Score6first,Score6second); $("#RollResults").append($("#ConField6").val() + " rolled: " + Score6first + " and " + Score6second + " with Disadvantage<br>");}
+        if (Combatant[6] === 1) {Score6 = Score6first; $("#RollResults").append($("#ConField6").val() + " rolled: " + Score6 + "<br>");ScoresArray.push(Score6);}
+        else if (Combatant[6] === 2) {Score6 = Math.max(Score6first,Score6second); $("#RollResults").append($("#ConField6").val() + " rolled: " + Score6first + " and " + Score6second + " with Advantage<br>");ScoresArray.push(Score6);}
+        else if (Combatant[6] === 3) {Score6 = Math.min(Score6first,Score6second); $("#RollResults").append($("#ConField6").val() + " rolled: " + Score6first + " and " + Score6second + " with Disadvantage<br>");ScoresArray.push(Score6);}
         else if (Combatant[6] === 4) {Score6 = Score6; $("#RollResults").append($("#ConField6").val() + " kept the roll: " + Score6 + "<br>");}   
         $('#Score6').val(Score6);
-        ScoresArray.push(Score6);
     }
     if (Combatant[7] > 0){
         var Score7first = parseFloat($('#numField7').val()) + parseFloat(Math.floor((Math.random()*20)+1));
         var Score7second = parseFloat($('#numField7').val()) + parseFloat(Math.floor((Math.random()*20)+1));
-        if (Combatant[7] === 1) {Score7 = Score7first; $("#RollResults").append($("#ConField7").val() + " rolled: " + Score7 + "<br>");}
-        else if (Combatant[7] === 2) {Score7 = Math.max(Score7first,Score7second); $("#RollResults").append($("#ConField7").val() + " rolled: " + Score7first + " and " + Score7second + " with Advantage<br>");}
-        else if (Combatant[7] === 3) {Score7 = Math.min(Score7first,Score7second); $("#RollResults").append($("#ConField7").val() + " rolled: " + Score7first + " and " + Score7second + " with Disadvantage<br>");}
+        if (Combatant[7] === 1) {Score7 = Score7first; $("#RollResults").append($("#ConField7").val() + " rolled: " + Score7 + "<br>");ScoresArray.push(Score7);}
+        else if (Combatant[7] === 2) {Score7 = Math.max(Score7first,Score7second); $("#RollResults").append($("#ConField7").val() + " rolled: " + Score7first + " and " + Score7second + " with Advantage<br>");ScoresArray.push(Score7);}
+        else if (Combatant[7] === 3) {Score7 = Math.min(Score7first,Score7second); $("#RollResults").append($("#ConField7").val() + " rolled: " + Score7first + " and " + Score7second + " with Disadvantage<br>");ScoresArray.push(Score7);}
         else if (Combatant[7] === 4) {Score7 = Score7; $("#RollResults").append($("#ConField7").val() + " kept the roll: " + Score7 + "<br>");}   
         $('#Score7').val(Score7);
-        ScoresArray.push(Score7);
     }
     if (Combatant[8] > 0){
         var Score8first = parseFloat($('#numField8').val()) + parseFloat(Math.floor((Math.random()*20)+1));
         var Score8second = parseFloat($('#numField8').val()) + parseFloat(Math.floor((Math.random()*20)+1));
-        if (Combatant[8] === 1) {Score8 = Score8first; $("#RollResults").append($("#ConField8").val() + " rolled: " + Score8 + "<br>");}
-        else if (Combatant[8] === 2) {Score8 = Math.max(Score8first,Score8second); $("#RollResults").append($("#ConField8").val() + " rolled: " + Score8first + " and " + Score8second + " with Advantage<br>");}
-        else if (Combatant[8] === 3) {Score8 = Math.min(Score8first,Score8second); $("#RollResults").append($("#ConField8").val() + " rolled: " + Score8first + " and " + Score8second + " with Disadvantage<br>");}
+        if (Combatant[8] === 1) {Score8 = Score8first; $("#RollResults").append($("#ConField8").val() + " rolled: " + Score8 + "<br>");ScoresArray.push(Score8);}
+        else if (Combatant[8] === 2) {Score8 = Math.max(Score8first,Score8second); $("#RollResults").append($("#ConField8").val() + " rolled: " + Score8first + " and " + Score8second + " with Advantage<br>");ScoresArray.push(Score8);}
+        else if (Combatant[8] === 3) {Score8 = Math.min(Score8first,Score8second); $("#RollResults").append($("#ConField8").val() + " rolled: " + Score8first + " and " + Score8second + " with Disadvantage<br>");ScoresArray.push(Score8);}
         else if (Combatant[8] === 4) {Score8 = Score8; $("#RollResults").append($("#ConField8").val() + " kept the roll: " + Score8 + "<br>");}   
         $('#Score8').val(Score8);
-        ScoresArray.push(Score8);
     }
     if (Combatant[9] > 0){
         var Score9first = parseFloat($('#numField9').val()) + parseFloat(Math.floor((Math.random()*20)+1));
         var Score9second = parseFloat($('#numField9').val()) + parseFloat(Math.floor((Math.random()*20)+1));
-        if (Combatant[9] === 1) {Score9 = Score9first; $("#RollResults").append($("#ConField9").val() + " rolled: " + Score9 + "<br>");}
-        else if (Combatant[9] === 2) {Score9 = Math.max(Score9first,Score9second); $("#RollResults").append($("#ConField9").val() + " rolled: " + Score9first + " and " + Score9second + " with Advantage<br>");}
-        else if (Combatant[9] === 3) {Score9 = Math.min(Score9first,Score9second); $("#RollResults").append($("#ConField9").val() + " rolled: " + Score9first + " and " + Score9second + " with Disadvantage<br>");}
+        if (Combatant[9] === 1) {Score9 = Score9first; $("#RollResults").append($("#ConField9").val() + " rolled: " + Score9 + "<br>");ScoresArray.push(Score9);}
+        else if (Combatant[9] === 2) {Score9 = Math.max(Score9first,Score9second); $("#RollResults").append($("#ConField9").val() + " rolled: " + Score9first + " and " + Score9second + " with Advantage<br>");ScoresArray.push(Score9);}
+        else if (Combatant[9] === 3) {Score9 = Math.min(Score9first,Score9second); $("#RollResults").append($("#ConField9").val() + " rolled: " + Score9first + " and " + Score9second + " with Disadvantage<br>");ScoresArray.push(Score9);}
         else if (Combatant[9] === 4) {Score9 = Score9; $("#RollResults").append($("#ConField9").val() + " kept the roll: " + Score9 + "<br>");}   
         $('#Score9').val(Score9);
-        ScoresArray.push(Score9);
     }    
     if (Combatant[10] > 0){
         var Score10first = parseFloat($('#numField10').val()) + parseFloat(Math.floor((Math.random()*20)+1));
         var Score10second = parseFloat($('#numField10').val()) + parseFloat(Math.floor((Math.random()*20)+1));
-        if (Combatant[10] === 1) {Score10 = Score10first; $("#RollResults").append($("#ConField10").val() + " rolled: " + Score10 + "<br>");}
-        else if (Combatant[10] === 2) {Score10 = Math.max(Score10first,Score10second); $("#RollResults").append($("#ConField10").val() + " rolled: " + Score10first + " and " + Score10second + " with Advantage<br>");}
-        else if (Combatant[10] === 3) {Score10 = Math.min(Score10first,Score10second); $("#RollResults").append($("#ConField10").val() + " rolled: " + Score10first + " and " + Score10second + " with Disadvantage<br>");}
+        if (Combatant[10] === 1) {Score10 = Score10first; $("#RollResults").append($("#ConField10").val() + " rolled: " + Score10 + "<br>");ScoresArray.push(Score10);}
+        else if (Combatant[10] === 2) {Score10 = Math.max(Score10first,Score10second); $("#RollResults").append($("#ConField10").val() + " rolled: " + Score10first + " and " + Score10second + " with Advantage<br>");ScoresArray.push(Score10);}
+        else if (Combatant[10] === 3) {Score10 = Math.min(Score10first,Score10second); $("#RollResults").append($("#ConField10").val() + " rolled: " + Score10first + " and " + Score10second + " with Disadvantage<br>");ScoresArray.push(Score10);}
         else if (Combatant[10] === 4) {Score10 = Score10; $("#RollResults").append($("#ConField10").val() + " kept the roll: " + Score10 + "<br>");}   
         $('#Score10').val(Score10);
-        ScoresArray.push(Score10);
     }
     
     if (hasDuplicates(ScoresArray)){Initiate();console.log("Rerolling");};
