@@ -92,7 +92,7 @@ body{
   font-family: monospace;
 }
 
-#ClearResults, #ResetRoundCounter {
+#ClearResults, #ResetRoundCounter, #HideScoresButton {
     float: right;
     margin-right: 28px;
 }
