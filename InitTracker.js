@@ -4,6 +4,7 @@ var CurrentInitiativeHolder = 0;
 var CurrentInitiativeValue = 0;
 var RoundCounter = 1;
 var InitiativeRolled = false;
+var ScoresHidden = false;
 
 var CombatantReady = Array(11);
 for (var i = 0; i < CombatantReady.length; i++) { CombatantReady[i] = true; }
@@ -299,7 +300,7 @@ $('#Initiate').click(Initiate);
 function Initiate(){
     
     $("#RollResults").html("");
-    
+
     if ((!Combatant[1] > 0 &&!Combatant[2] > 0 &&!Combatant[3] > 0 &&!Combatant[4] > 0 &&!Combatant[5] > 0 &&!Combatant[6] > 0 &&!Combatant[7] > 0 &&!Combatant[8] > 0 &&!Combatant[9] > 0 &&!Combatant[10] > 0 )) {
         $('#CA').text('Add Participant');
         return;
@@ -528,6 +529,20 @@ function ResetRoundCounter() {
     $('#RoundCounter').text(RoundCounter);
 }
 
+$('#HideScoresButton').click(HideScores);
+function HideScores() {
+    if (!ScoresHidden) {
+        $('#HideScoresButton').text('Show Scores');
+        $('.Score').css('color','transparent');
+        ScoresHidden = true;
+    }else{
+        $('#HideScoresButton').text('Hide Scores');
+        $('.Score').css('color','White');
+        ScoresHidden = false;
+    };
+
+}
+
 $("#Score1").change(function(){Score[1] = parseInt($("#Score1").val());CombatantReady[1] = true;});
 $("#Score2").change(function(){Score[2] = parseInt($("#Score2").val());CombatantReady[2] = true;});
 $("#Score3").change(function(){Score[3] = parseInt($("#Score3").val());CombatantReady[3] = true;});
@@ -541,4 +556,3 @@ $("#Score10").change(function(){Score[10] = parseInt($("#Score10").val());Combat
 
 }
 $(document).ready(main);
-
